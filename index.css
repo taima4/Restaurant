@@ -1,0 +1,778 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@100&family=Dancing+Script&family=Rubik&display=swap');
+
+/*public style*/
+*{
+margin: 0px;
+padding: 0px;
+}
+a{
+    text-decoration:none ;
+
+}
+ul{
+    list-style-type: none;;
+}
+/*header style*/
+/*start*/
+.header{
+    background-image:url('../images/restaurantBackground.png');
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+.navbar{
+    overflow: hidden;
+    position: fixed;
+width: 100%;
+top: 0;
+ }
+
+.logo{
+    margin-top:20px;
+    float: left;
+    width: 30%;
+
+}
+.logo img {
+    width: 30%;    
+    }
+   
+.nav{
+    margin-top:35px;
+    margin-left: 135px;
+    float: left;
+    width: 60%;
+} 
+.nav ul li{
+    display: inline-block;
+    width:80px;
+
+
+    }
+.nav  ul li a{
+    color:  rgb(255, 255, 255)
+    ;
+   font-family:Alegreya;
+
+font-size: 20px;
+
+font-weight: 400;
+
+
+}
+@media screen and (max-width: 576px) {
+    .header{
+      background-position: -390px 57px;
+    }
+    .navbar{
+        position: relative;
+    }
+        .nav{
+        width: 100%;
+        margin-left: -3px;
+
+    }
+    .logo{
+       
+        width: 100%;
+    
+    }
+    .nav ul li{
+width: 15%;
+           }
+    .nav  ul li a{
+    font-size: 17px;
+    }
+
+
+}
+
+.header-content{
+
+    color: rgba(255, 255, 255, 0.92);
+    margin-top: 100px;
+}
+.header-content img{
+    display: inline;
+}
+.header-content h1{
+    margin-top: 15px;
+    font-family:Alegreya;
+
+    font-size: 76px;
+    
+    font-weight: 400;
+}
+.header-content p{
+    margin-top: 35px;
+    font-family:"Dancing Script";
+
+    font-size: 40px;
+    
+    font-weight: 400;
+}
+.header-content button{
+    font-family:"Alegreya Sans";
+    font-size: 16px;
+    font-weight: 600;
+    margin-top:50px;
+    padding: 20px 25px;
+
+}
+.header-content .learn-more{
+     background-color: #c1ab84 ;
+color: white;
+cursor: pointer;
+}
+.header-content .learn-more:hover{
+    background-color: white ;
+    color: black;
+}
+.header-content .Book-a-Visit:hover{
+    background-color: #cecfd0b2 ;
+    color: black;
+}
+.overlay{
+    background-color:rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
+.demo{
+    position: absolute;
+    background-color: white;
+    top:200px;
+    right: 0;
+     width: 3%;
+     border-radius: 10%;
+
+}
+.demo li{
+    padding: 10px;
+}
+@media screen and (max-width: 576px) {
+  
+    .header-content{
+        margin-top: 70px;
+        margin-bottom: 300px;
+
+
+    }
+    .header-content img{
+        width: 85%;
+    }
+    .header-content h1{
+        font-size: 40px;
+        margin-top: 17px;
+
+    }
+    .header-content p{
+        margin-top: 15px;
+
+        font-size: 20px;
+    }
+    .header-content button{
+        font-size: 15px;
+        font-weight: 500;
+        margin-top:30px;
+        padding: 10px 15px;
+    
+    }
+    .demo{
+        top:190px;
+        right: 0px;
+         width:10%;
+    }
+}
+
+
+    /*end*/
+    /*about section*/
+    /*start*/
+.about{
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 50px;
+}
+ .about-img{
+       
+         float: left;
+          width: 30%;
+      margin-left: 200px;
+      margin-right: 100px;
+
+
+    }
+    @media screen and (max-width: 576px) {
+        
+        .about{
+            margin-top: 30px;
+            height: 100%;
+        }
+        .about-img{
+float: none;   
+width: 100%;       
+  margin-left: -60px;
+            
+        }
+    }
+   
+    .about-content{
+        float: left;
+        width: 40%;
+        margin-top: 100px;
+        margin-left: 50px;
+
+
+    }
+    .about-content h2{
+        font-size: 36px;
+        font-family: Alegreya;
+        font-weight: 400;
+        line-height: 30px;
+        color: black;
+
+
+    }
+    .about-content h3{
+        font-size: 28px;
+        font-family: 'Dancing Script';
+    font-weight: 400;
+    color: rgb(193, 171, 132);
+    line-height: 80px;
+    margin-bottom: 10px;
+
+
+    }
+    .about-content p{
+        font-size: 18px;
+        font-family: 'Alegreya Sans';
+    font-weight: 400;
+    line-height: 35px;
+    color:rgb(104, 104, 104);
+    margin-bottom: 30px;
+
+    }
+
+        .about-content ul li{
+            font-size: 18px;
+            font-family: 'Alegreya Sans';
+            font-weight: 400;
+              color:rgb(104, 104, 104)
+
+
+        }
+        .about-content ul li i{
+            padding: 23px;
+            width: 2px;
+            height: 2px;
+            background-color: #c1ab84;
+            border-radius: 50%;
+            font-size: 27px;
+            line-height:5px;
+            text-align: center;
+            margin-right: 15px;
+            margin-bottom: 20px;
+        }
+     
+       .about-content  i::before{
+            color: white;
+            margin-left: -13px;
+            }
+            @media screen and (max-width: 576px) {
+                .about-content{
+                  float: none;
+                    width: 100%;
+
+                    margin-top: 80px;
+                    margin-left: 20px;            
+                    }
+                    .about-content h3{
+                        line-height: 70px;
+                        margin-bottom: 5px;       
+                                 }
+                      .about-content p{
+                        width: 90%;   
+                                    }
+
+            }
+           
+           
+            /*end*/
+
+            /*Reviewers section*/
+    /*start*/         
+    .reviwers{
+        overflow: hidden;
+        margin-top:150px;
+    }
+    .reviwers-img{
+       
+        float: right;
+         width: 40%;
+     margin-right: 100px;
+
+
+   }
+   @media screen and (max-width: 576px) {
+    .reviwers-img{
+       
+        float: none;
+        }
+        .reviwers-img img{
+            width: 360px;
+            height: 300px;
+            margin-left: 15px;
+            margin-top: 70px;
+
+
+        }
+
+   }
+  
+   .reviwes-content{
+       float: left;
+       width: 35%;
+       margin-left: 155px;
+        color:rgb(104, 104, 104)
+
+
+   }
+   .reviwes-content h2{
+    font-size: 36px;
+    font-family: Alegreya;
+    font-weight: 400;
+    line-height:35px;
+    color: black;
+
+}
+.reviwes-content h3{
+    font-size: 28px;
+    font-family: 'Dancing Script';
+font-weight: 400;
+color: rgb(193, 171, 132);
+line-height: 50px;
+margin-bottom: 30px;
+
+}
+.reviwes-content p{
+    font-size: 18px;
+    font-family: 'Alegreya Sans';
+font-weight: 400;
+line-height: 33.48px;
+margin-bottom: 20px;
+
+}
+
+    .reviwes-contentul li{
+        padding: 10px;
+        font-size: 18px;
+        font-family: 'Alegreya Sans';
+          font-weight: 400;
+
+
+    }
+    .reviwes-content ul li i{
+        padding: 15px;
+     font-size: 20px;
+        line-height:20px;
+    }
+ 
+   .reviwes-content  i::before{
+       color: #c1ab84;
+        
+        margin-left: -10px;
+        }
+        @media screen and (max-width: 576px) {
+            .reviwes-content{
+                float: none;
+                width: 100%;
+                margin-left: 15px;
+                width: 90%;
+            }
+            
+        }
+       
+    /*end*/
+   /*cover section*/
+    /*start*/
+.cover{
+   background-image: url(../images/shutterstock_280369721.jpg);
+  background-position:  0px -170px;
+     padding-top: 250px;
+     padding-bottom: 250px;
+     background-size: cover;
+     margin-top: 100px;
+    }
+    @media screen and (max-width: 576px) {
+        .cover{
+            margin-top: 70px;
+
+        background-position:  -335px -110px;
+        padding-top: 245px;
+        padding-bottom: 245px;
+        background-size:270%;
+
+        }
+    }
+   
+   /*end*/
+   /*menue section*/
+    /*start*/
+
+.menue{
+    text-align: center;
+   margin-top: 100px;
+   overflow: hidden;
+
+}
+.conteneer {
+    width: 82%;
+    margin: auto;
+}
+.conteneer h2{
+    font-size: 36px;
+    font-family: Alegreya;
+font-weight: 400;
+line-height: 49.68px;
+margin-bottom: 10px;
+
+}
+.conteneer h3{
+    font-size: 28px;
+    font-family: 'Dancing Script';
+font-weight: 400;
+line-height: 38.64px;
+color: rgb(193, 171, 132);
+margin-bottom: 30px;
+
+}
+.item{
+
+    float: left;
+    width: 33.33%;
+}
+
+
+.menu-content img {
+    width: 90%;
+}
+
+
+
+.menu-content h3{
+    font-size: 21px;
+    font-family: Alegreya;
+font-weight: 400;
+line-height: 28.98px;
+margin-bottom: 10px;
+margin-top: 30px;
+color: rgb(37, 48, 72);
+
+
+}
+
+.menu-content p{
+    font-size: 18px;
+    font-family: 'Alegreya Sans';
+font-weight: 400;
+line-height: 33.48px;
+color: rgb(104, 104, 104);
+margin-bottom: 80px;
+text-align: center;
+width: 95%;
+
+}
+
+.menu-content button{
+    padding: 15px;
+    width: 155px;
+    height: 55px;
+    background-color: #c1ab84;
+    border:none  ;
+    border-radius:4%  ;
+    font-family:'Alegreya Sans';
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    margin-top: -20px;
+
+
+
+}
+@media screen and (max-width: 576px) {
+    .conteneer {
+        width: 100%;
+    }
+
+    .item{
+
+        float: none;
+        width: 100%;
+
+    }
+    .menu-content img {
+        width: 90%;
+        margin-left: 15px;
+    }
+    .menu-content p{
+        font-size: 18px;
+    width: 90%;
+    margin-left: 30px;
+    margin-bottom: 40px;
+
+    
+}
+.menu-content button{
+    margin: 55px;
+    width: 150px;
+    height: 53px;
+    font-weight: 600;
+
+}
+}
+ /*end*/
+/*location section*/
+ /*start*/
+
+ .location{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
+ }
+
+ 
+ 
+ .location-img{
+    float: left;
+    width: 40%;
+    margin-left: 100px;
+ }
+ .location-img iframe{
+    width: 115%;
+    height:500px;
+ }
+ @media screen and (max-width: 576px) {
+    .location-img{
+        float: none;
+        width: 80%;
+        margin-left: 15px;
+     }
+     
+ }
+ .location-content{
+    float: left;
+    width: 45%;
+
+ }
+ .location-content h2{
+    font-size: 36px;
+    font-family: Alegreya;
+font-weight: 400;
+line-height: 49.68px;
+margin-bottom: 35px;
+
+}
+.location-content p{
+    font-size: 18px;
+    font-family: 'Alegreya Sans';
+font-weight: 400;
+line-height: 33.48px;
+color: rgb(104, 104, 104);
+margin-bottom: 25px;
+
+}
+.location-content ul li{
+    font-size: 18px;
+    font-family: 'Alegreya Sans';
+    font-weight: 400;
+      color:rgb(104, 104, 104)
+
+
+}
+.location-content ul li i{
+
+    padding: 18px;
+    width: .5px;
+    height: .5px;
+    background-color: #c1ab84;
+    border-radius: 50%;
+    font-size:17px;
+    line-height:0px;
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.location-content  i::before{
+    color: white;
+    margin-left: -8px;
+    }
+    @media screen and (max-width: 576px) {
+        .location-content{
+            float: none;
+            width: 101%;
+            margin-left: 10px;
+            margin-bottom: 50px;
+        
+         }
+         .location-content p{
+            font-size: 19px;
+         }
+    }
+   
+    /*end*/
+/*footer section*/
+ /*start*/
+ .footer{
+padding-top: 30px;
+background-color: #403D38;
+
+ }
+ .footer-first{
+    overflow: hidden;
+    padding-bottom: 50px;
+    padding: 55px 80px;
+
+}
+
+
+
+ .footer-first .item{
+float: left;
+width: 25%;
+
+
+ }
+ .link{
+    margin-left: 70px;
+ }
+ .footer-first h2{
+    color: white;
+    font-size:20px;
+    font-family: Alegreya;
+    line-height:  27.6px;
+    font-weight: 400;
+    margin-bottom: 25px;
+
+ }
+ .footer-first a{
+    font-size:16px;
+    font-family: 'Alegreya Sans';
+    line-height: 33.48px;
+    font-weight: 400;
+    color: rgb(150, 150, 150);
+    cursor: pointer;
+ }
+ .footer-first p{
+    font-size:16px;
+    font-family: 'Alegreya Sans';
+    line-height:  29.76px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: rgb(150, 150, 150);
+    width: 82%;
+    
+ }
+ .footer-first ul li{
+    color: rgb(150, 150, 150);
+
+    font-size:16px;
+    font-family: 'Alegreya Sans';
+    line-height:  29.76px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    width: 70%;
+ }
+ .footer-first ul li i{
+    color: rgb(150, 150, 150);
+
+   margin-right: 15px;
+ }
+ @media screen and (max-width: 576px) {
+    .footer-first .item{
+        float: none;
+        width: 100%;
+         }
+         .footer-first p{
+        
+            width: 155%;
+            margin-left: -60px;
+            
+         }
+        
+         .footer-first h2{
+            margin-left: -60px;
+
+         }
+         .footer-first ul li{
+width: 100%;
+margin-left: -60px;
+         }
+         .link a{
+            margin-left:-70px ;
+         }
+
+ }
+
+ .footer-second{
+    background-color:#353330;
+text-align: center;
+padding-top: 60px;
+padding-bottom: 100px;
+ }
+ .footer-second p{
+    color:rgb(119, 119, 119);
+    font-size:18px;
+    font-family: 'Alegreya Sans';
+    line-height:  33.48px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 20px;
+
+ }
+ .footer-second  .icons i{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:#484540;
+    line-height: 60px;
+    font-size: 24px;
+    color: #8C8A86;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+.footer-second   .fa-facebook-f:hover{
+background-color:#3B5998;
+color: white;
+}
+.footer-second   .fa-instagram:hover{
+    background-color:#125688;
+    color: white;
+
+    }
+ .footer-second   .fa-tumblr:hover{
+        background-color:#32506D;
+        color: white;
+
+        }
+ .footer-second   .fa-twitter:hover{
+            background-color:#00ACED;
+            color: white;
+
+            }
+            @media screen and (max-width: 576px) {
+                .footer-second img {
+                    width: 95%;
+                 }
+            }
+       
+
+ /*end*/
+ 
+ 
+ 
+ 
